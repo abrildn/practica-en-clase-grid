@@ -159,6 +159,16 @@ p:hover {
     flex: 0 0 auto;
     width: 100%;
     scroll-snap-align: start;
+   animation: desplazar 10s linear infinite; /* Animación de desplazamiento automático */
+}
+
+@keyframes desplazar {
+    0% {
+        transform: translateX(0); /* Comienza desde la posición original */
+    }
+    100% {
+        transform: translateX(calc(-100% * 3)); /* Desplaza hasta la última imagen */
+    }
 }
 
 .carousel img {
